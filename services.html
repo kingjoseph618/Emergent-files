@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHC | About Us</title><style>
+:root{
+  --bg:#020912; --panel:#061522; --panel2:#081c2d;
+  --cyan:#22cfff; --cyan2:#76e8ff; --gold:#f2c34f;
+  --text:#eefaff; --muted:#9db8c7; --line:#12617b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:radial-gradient(circle at 50% 0%,#0a2740 0,#020912 42%,#01060b 100%);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100%}
+body{overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background:
+linear-gradient(rgba(34,207,255,.10) 1px,transparent 1px),
+linear-gradient(90deg,rgba(34,207,255,.07) 1px,transparent 1px);background-size:42px 42px}
+a{color:inherit;text-decoration:none}
+header{height:76px;background:rgba(3,14,24,.94);border-bottom:1px solid #16445a;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;position:sticky;top:0;z-index:10;box-shadow:0 0 25px rgba(0,190,255,.12)}
+.logo{font-weight:900;letter-spacing:2px;font-size:28px;color:var(--cyan);text-shadow:0 0 12px rgba(34,207,255,.65)}
+.logo small{display:block;font-size:7px;letter-spacing:1px;color:#b7d2dc;text-align:center;margin-top:-3px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center}
+nav a{font-size:11px;text-transform:uppercase;color:#d9edf5;letter-spacing:.5px}
+nav a:hover,nav a.active{color:var(--cyan)}
+.donate{border:1px solid var(--gold);padding:9px 18px;border-radius:5px;color:var(--gold);font-weight:700}
+main{width:min(1120px,92vw);margin:0 auto;padding:58px 0}
+.hero{min-height:560px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center}
+.kicker{color:var(--cyan);font-weight:800;letter-spacing:2px;font-size:15px}
+h1{font-size:clamp(42px,6vw,76px);line-height:.96;margin:12px 0;color:#f4fbff}
+h1 span{color:var(--gold)}
+h2{font-size:42px;margin:0 0 12px}
+h3{color:var(--cyan);letter-spacing:1px}
+p{color:var(--muted);line-height:1.7}
+.btn{display:inline-block;background:#16a8d6;color:white;padding:13px 24px;border-radius:4px;font-weight:800;margin:18px 10px 0 0;box-shadow:0 0 18px rgba(22,168,214,.25)}
+.btn.gold{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.hud{border:1px solid var(--line);background:linear-gradient(145deg,rgba(8,32,49,.92),rgba(2,12,21,.9));padding:28px;position:relative;box-shadow:inset 0 0 35px rgba(0,187,255,.06),0 0 25px rgba(0,180,255,.07)}
+.hud:before,.hud:after{content:"";position:absolute;width:34px;height:34px;border-color:var(--cyan);border-style:solid;opacity:.8}
+.hud:before{left:-1px;top:-1px;border-width:2px 0 0 2px}.hud:after{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:24px;text-align:center;min-height:180px}
+.icon{font-size:38px;color:var(--cyan);text-shadow:0 0 14px rgba(34,207,255,.7)}
+.card h3{font-size:16px;color:white;margin:14px 0 8px}
+.card p{font-size:12px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:25px 0}
+.stat{text-align:center;padding:18px;border:1px solid #14546d;background:rgba(4,21,33,.8)}
+.stat strong{display:block;color:var(--cyan);font-size:27px}.stat span{font-size:10px;color:#9fb8c5}
+.quote{margin-top:22px;text-align:center;color:var(--cyan2);font-weight:700}
+.list{display:grid;gap:12px}
+.list a{padding:17px 20px;border:1px solid #12526b;background:rgba(5,24,38,.85);color:#dff8ff;display:flex;justify-content:space-between}
+.list a span{color:var(--cyan)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+form{display:grid;gap:12px}input,textarea{width:100%;background:#04111d;border:1px solid #17516a;color:white;padding:14px;border-radius:3px}textarea{min-height:150px;resize:vertical}
+footer{border-top:1px solid #113d50;padding:25px 5vw;text-align:center;color:#7ea3b2;font-size:12px}
+.bot{width:min(360px,80vw);aspect-ratio:1;border-radius:50%;margin:auto;display:grid;place-items:center;border:2px solid #1ccfff;box-shadow:0 0 25px #078fc2, inset 0 0 45px rgba(21,185,255,.2);background:radial-gradient(circle,#0b3854,#020a12 65%)}
+.bot-face{font-size:110px;color:#75eaff;text-shadow:0 0 25px #00bfff}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}nav{gap:8px}nav a{font-size:9px}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.logo{font-size:22px}header{height:auto;padding:14px 4vw;gap:10px;align-items:flex-start}.donate{display:none}}
+</style></head>
+<body>
+<header><a class="logo" href="index.html">CHC<small>CITIZENS HELPING CITIZENS</small></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="about-us.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="resources.html">Resources</a>
+<a href="get-help.html">Get Help</a>
+<a href="contact.html">Contact</a>
+<a class="donate" href="#donate">Donate</a>
+</nav>
+</header>
+<main>
+<section class="two">
+<div><h2>ABOUT US</h2><h3>OUR MISSION</h3><p>Citizens Helping Citizens (CHC) is a community-driven organization dedicated to empowering individuals and families through resources, support, and opportunities that create lasting change.</p>
+<h3>OUR VISION</h3><p>A future where every individual has the tools, resources, and support to thrive and give back to their community.</p></div>
+<div class="hud" style="text-align:center"><div style="font-size:110px;color:#1ccfff;text-shadow:0 0 30px #00bfff">CHC</div><p>COMMUNITY • SUPPORT • OPPORTUNITY</p></div>
+</section>
+<div class="stats"><div class="stat"><strong>10K+</strong><span>LIVES IMPACTED</span></div><div class="stat"><strong>250+</strong><span>COMMUNITY PARTNERS</span></div><div class="stat"><strong>50+</strong><span>PROGRAMS</span></div><div class="stat"><strong>100%</strong><span>COMMITMENT</span></div></div>
+<div class="hud quote">“Alone we can do so little; together we can do so much.”</div>
+</main>
+<footer>EMPOWERING COMMUNITIES. TRANSFORMING LIVES. BUILDING HOPE. &nbsp; <span style="color:var(--gold)">TOGETHER, WE CAN MAKE A DIFFERENCE.</span></footer>
+</body></html>
