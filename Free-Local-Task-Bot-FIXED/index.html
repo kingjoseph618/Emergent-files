@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Bot Emulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <aside class="panel">
+      <div>
+        <p class="eyebrow">OFFLINE WORKSPACE</p>
+        <h1>Bot Emulator</h1>
+        <p class="subtle">Tell it what you want done. It creates files and runs tasks automatically.</p>
+      </div>
+
+      <label>
+        Bot name
+        <input id="botName" value="My Local Bot" maxlength="40">
+      </label>
+
+      <label>
+        Ollama model
+        <input id="model" value="llama3.2:3b" spellcheck="false">
+      </label>
+
+      <label>
+        Bot instructions
+        <textarea id="system" rows="8">You are a helpful local assistant. Be clear, accurate, and concise.</textarea>
+      </label>
+
+      <button id="clear" class="secondary" type="button">Clear conversation</button>
+      <p class="status"><span id="dot"></span><span id="status">Ready</span></p>
+    </aside>
+
+    <section class="chat">
+      <header>
+        <div class="avatar">LB</div>
+        <div>
+          <strong id="title">My Local Bot</strong>
+          <span>Powered locally by Ollama</span>
+        </div>
+      </header>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <article class="message assistant">
+          <div class="bubble">Hello. I’m running locally and ready when you are.</div>
+        </article>
+      </div>
+
+      <form id="composer">
+        <textarea id="prompt" rows="1" placeholder="Message your local bot…" required></textarea>
+        <button id="send" type="submit" aria-label="Send message">Send</button>
+      </form>
+      <p class="hint">Enter to send · Shift+Enter for a new line</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
