@@ -21,6 +21,7 @@ The core bot application directory:
 ### edna-core/
 Configuration and manifest directory (under development):
 - `edna_master_manifest.json` — Master configuration (currently empty)
+- Custom agent specifications and instructions
 
 ## Coding Conventions
 
